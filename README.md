@@ -79,6 +79,8 @@ El sistema trabaja leyendo y escribiendo datos directamente en `paises.csv` util
 #### ✅ Opcion 3 – Filtar paises
 **Entrada (usuario): 3**
 
+<img width="873" height="118" alt="imagen" src="https://github.com/user-attachments/assets/4a47f6a2-bdec-4d7c-9d9c-6eb957fb7ad2" />
+
 - **Filtrado por continente**
 
 <img width="775" height="410" alt="imagen" src="https://github.com/user-attachments/assets/00c8856f-c785-4c7f-85aa-18212168ead8" />
@@ -92,6 +94,7 @@ El sistema trabaja leyendo y escribiendo datos directamente en `paises.csv` util
 <img width="848" height="428" alt="imagen" src="https://github.com/user-attachments/assets/a65f8d97-ec84-42a9-b0a1-9445cc474fdf" />
 
 #### ✅ Opcion 4 – Ordenar paises
+
 
 
 
