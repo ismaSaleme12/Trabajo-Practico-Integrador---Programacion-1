@@ -116,5 +116,49 @@ El sistema trabaja leyendo y escribiendo datos directamente en `paises.csv` util
 - **Ordenamiento por superficie (Ascendente o Descendente)**
 - ***Se comporta de igual manera que la opcion anterior***
 
+#### ✅ Opcion 5 – Mostrar estadisticas
+
+<img width="885" height="151" alt="imagen" src="https://github.com/user-attachments/assets/4a4f84d2-df13-415d-9c47-62a95934a04e" />
+
+- **Menor y mayor**
+
+- <img width="662" height="140" alt="imagen" src="https://github.com/user-attachments/assets/05da77f2-5bdf-4f56-9e5f-0c8f59843dc5"> 
+
+- **Promedio poblacion**
+
+  <img width="862" height="78" alt="imagen" src="https://github.com/user-attachments/assets/aaeebb73-3ab8-4bb1-8234-b37e70ea4bf2" />
+
+- **Promedio superficie**
+
+  <img width="862" height="74" alt="imagen" src="https://github.com/user-attachments/assets/5243d32e-027c-4222-9872-973114a24f25" />
+
+- **Cantidad de paises por continente**
+
+  <img width="862" height="114" alt="imagen" src="https://github.com/user-attachments/assets/f95f888d-63ea-4f45-855d-0412a1c0d24f" />
+
+
+#### ✅ Opcion 6 – Agregar pais
+
+<img width="841" height="108" alt="imagen" src="https://github.com/user-attachments/assets/d37f4dfc-ebd8-438d-95f6-2c6736772fbe" />
+
+<img width="885" height="43" alt="imagen" src="https://github.com/user-attachments/assets/03f8ca53-1d90-4621-bc25-3ea2a3ccde4b" />
+
+#### ✅ Opcion 7 – Eliminar pais
+
+<img width="885" height="92" alt="imagen" src="https://github.com/user-attachments/assets/503e1757-efc6-4417-87ad-8dcf16cc659b" />
+
+<img width="885" height="22" alt="imagen" src="https://github.com/user-attachments/assets/9175b92c-9ef0-44da-8390-c27ed6416e63" />
+
+#### ✅ Opcion 8 – Salir del programa
+
+<img width="885" height="41" alt="imagen" src="https://github.com/user-attachments/assets/e67409f6-3ef0-4ea3-8c5e-f51d28b88d8e" />
+
+
+
+
+
+
+
+
 
 
