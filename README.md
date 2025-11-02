@@ -1,22 +1,46 @@
-# 💻 Trabajo Practico Integrador - Programacion 1 💻
-## 📕 Integrantes
-- Sabrina gimenez
-- Ismael Saleme
+# Trabajo Práctico Integrador – Programación 1
+## Gestión de Países con archivos CSV y operaciones estadísticas
 
-## 💻 Descripcion del programa:
-### ➡️ Este proyecto es una aplicación de consola en Python para gestionar un pequeño dataset de países almacenado en un archivo CSV (paises.csv). 
+### 📌 Descripción del programa
+Este proyecto es una aplicación de consola escrita en Python que administra un registro de países almacenado en un archivo CSV.  
+Permite realizar tareas variadas de consulta, búsqueda, filtrado, ordenamiento y estadísticas sobre cada país, además de agregar y eliminar registros.
 
-### 🟢 El programa ofrece un menú interactivo con opciones para:
+Cada país del dataset posee:
+- **Nombre**
+- **Población**
+- **Superficie (km²)**
+- **Continente**
 
-- **mostrar todos los países**
-- **buscar un país por nombre**
-- **filtrar por continente / rango de población / rango de superficie**
-- **ordenar por nombre/población/superficie (asc/desc)**
-- **ver estadísticas (mayor/menor población, promedios, conteo por continente)**
-- **agregar y eliminar países.**
+El sistema trabaja leyendo y escribiendo datos directamente en `paises.csv` utilizando diccionarios, listas y manejo de archivos con la librería `csv`.
 
-### 🟢 El código está dividido en tres partes principales:
+---
 
-- **PRACTICA_INTEGRADO.PY** — script principal: Contiene el menú, funciones de entrada/salida con el usuario (imprimir, solicitar inputs), y algunas utilidades (por ejemplo quitar_tildes() y inicializar_archivo()). Todas las operaciones del menú invocan funciones aquí o llaman al módulo de apoyo. 
-- **fcs_fIltrado_paises.py** — módulo auxiliar: Contiene la mayoría de los filtros, ordenamientos y estadísticas (funciones que trabajan con el CSV y devuelven/impresionan resultados). El principal script llama a estas funciones cuando el usuario escoge filtrar, ordenar o pedir estadísticas.
-- **paises.csv** - archivo con datos: Contiene todos los datos de los paises. Nombres, Poblacion, Superficie y Continente.
+### ✅ Funcionalidades principales
+✔ Mostrar todos los países registrados en formato tabla  
+✔ Buscar país por nombre (coincidencia exacta o parcial)  
+✔ Filtrar por:
+- Continente
+- Rango de población
+- Rango de superficie
+
+✔ Ordenar por:
+- Nombre
+- Población
+- Superficie  
+(en forma ascendente o descendente)
+
+✔ Estadísticas:
+- País con mayor población
+- País con menor población
+- Promedio de población
+- Promedio de superficie
+- Cantidad de países por continente
+
+✔ Agregar un país al archivo  
+✔ Eliminar un país por nombre  
+✔ Verificación y validación de entradas del usuario  
+✔ Manejo de errores y registros con formato incorrecto  
+
+---
+
+### 📁 Estructura del proyecto
