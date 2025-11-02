@@ -363,7 +363,7 @@ def promedio_poblacion():
                 print("ERROR. Valor invalido para division..")
             
             print("\n" + "=" * 30)
-            print(f"|El promedio de poblacion mundial es de: {prom_poblacion}")
+            print(f"|El promedio de poblacion mundial es de: {round(prom_poblacion)}")
             
     except FileNotFoundError:
         print(" El archivo no existe. Creando uno nuevo...")

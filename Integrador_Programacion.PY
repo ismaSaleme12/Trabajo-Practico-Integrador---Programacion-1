@@ -273,6 +273,18 @@ def agregar_pais():
         print("=" * 30)
         print("Entrada vacia o valor incorrecto. Intentelo de nuevo...")
         return
+    
+    with open(RUTA_ARCHIVO, "r",encoding="utf-8") as archivo:
+        lector = csv.DictReader(archivo)
+        paises = list(lector)
+        
+        #Verificacion para saber si existe dentro del csv
+        for pais in paises:
+            
+            if quitar_tildes(pais["nombre"].lower()) == quitar_tildes(nuevo_nombre.lower()):
+                print("El pais ingresado ya se encuentra dentro del sistema..")
+                return
+    
     #------------------------------------------------------------------------
     
     #------------------------------------------------------------------------
@@ -312,7 +324,7 @@ def agregar_pais():
     #---------------------------------------------------------------------------
     
     #Creacion de la fila del pais
-    nuevo_pais = {"nombre": nuevo_nombre, "poblacion": nuevo_poblacion, "superficie": nuevo_superficie, "continente": nuevo_continente}
+    nuevo_pais = {"nombre": nuevo_nombre.capitalize(), "poblacion": nuevo_poblacion, "superficie": nuevo_superficie, "continente": nuevo_continente.capitalize()}
     
     try:
         
