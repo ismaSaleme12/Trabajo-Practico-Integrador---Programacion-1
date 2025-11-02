@@ -1,5 +1,5 @@
 # Trabajo Práctico Integrador – Programación 1
-## Gestión de Países con archivos CSV y operaciones estadísticas
+## Gestión de Países con archivos CSV
 
 ### 📌 Descripción del programa
 Este proyecto es una aplicación de consola escrita en Python que administra un registro de países almacenado en un archivo CSV.  
@@ -17,7 +17,7 @@ El sistema trabaja leyendo y escribiendo datos directamente en `paises.csv` util
 
 ### ✅ Funcionalidades principales
 ✔ Mostrar todos los países registrados en formato tabla  
-✔ Buscar país por nombre (coincidencia exacta o parcial)  
+✔ Buscar país por nombre
 ✔ Filtrar por:
 - Continente
 - Rango de población
