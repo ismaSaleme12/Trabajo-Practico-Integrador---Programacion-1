@@ -76,14 +76,16 @@ def mostrar_paises():
                     #elimina paises con errores de formato
                     print(f"- País {fila.get('nombre')}' eliminado por error de formato.")
 
-                print("-" * 70)
-                
-                #Sobrescribo el csv original
-                with open(RUTA_ARCHIVO, "w", encoding="utf-8") as archivo:
-                    encabezado = ["nombre","poblacion","superficie","continente"]
-                    escritor = csv.DictWriter(archivo, fieldnames=encabezado)
-                    escritor.writeheader()
-                    escritor.writerows(contenido_valido)
+            print("-" * 70)
+            
+            
+        #Sobrescribo el csv original
+        if contenido_valido:
+            with open(RUTA_ARCHIVO, "w", encoding="utf-8") as archivo:
+                encabezado = ["nombre","poblacion","superficie","continente"]
+                escritor = csv.DictWriter(archivo, fieldnames=encabezado)
+                escritor.writeheader()
+                escritor.writerows(contenido_valido)
         
     except FileNotFoundError:
         print("El archivo no existe. Creando uno nuevo....")
@@ -285,7 +287,7 @@ def agregar_pais():
     
     #------------------------------------------------------------------------
     #Entrada y validacion de superficie
-    nuevo_superficie = float(input("-Ingrese la superficie del pais: ").strip())
+    nuevo_superficie = input("-Ingrese la superficie del pais: ").strip()
     
     try:
         if int(nuevo_superficie) < 0:

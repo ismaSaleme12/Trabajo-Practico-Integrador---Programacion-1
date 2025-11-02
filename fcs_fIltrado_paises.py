@@ -17,7 +17,7 @@ def filtrado_continente():
     
     continentes_validos = ["america","europa","asia","africa","oceania","antartida"]
     
-    continente = input("Ingrese el contiente con el que desea filtrar: ").strip().title()
+    continente = input("Ingrese el contiente con el que desea filtrar: ").strip()
     
     #Verificaciones de continente
     if not continente:
@@ -305,31 +305,39 @@ def pais_menor_mayor():
         with open(RUTA_ARCHIVO, "r", encoding="utf-8") as archivo:
             lector = csv.DictReader(archivo)
             
-            #Determino valores de inicio para su posterior comparacion
-            may_poblacion = 0
-            men_poblacion = 1000000
-            
+            primera = True
+            nombre_mayor = nombre_menor = None
+            may_poblacion = None
+            men_poblacion = None
+
             for fila in lector:
-                
                 try:
-                    #Comparacion y asignacion a sus respectivas variables
-                    if int(fila["poblacion"]) > may_poblacion:
-                        may_poblacion = int(fila["poblacion"])
-                        nombre_mayor = fila["nombre"]
-                    
-                    elif int(fila["poblacion"]) < men_poblacion:
-                        men_poblacion = int(fila["poblacion"])
-                        nombre_menor = fila["nombre"]
-                    
-                except ValueError:
+                    pobl = int(fila["poblacion"])
+                except (ValueError, KeyError):
                     continue
                 
-            print("\n" + "=" * 30)
+                if primera:
+                    may_poblacion = men_poblacion = pobl
+                    nombre_mayor = nombre_menor = fila["nombre"]
+                    primera = False
+                    
+                else:
+                    if pobl > may_poblacion:
+                        may_poblacion = pobl
+                        nombre_mayor = fila["nombre"]
+                        
+                    if pobl < men_poblacion:
+                        men_poblacion = pobl
+                        nombre_menor = fila["nombre"]
+
+            if primera:
+                print("No hay paises con poblacion valida.")
+                return
+
             print(f"|Pais con mayor poblacion: {nombre_mayor} |Poblacion: {may_poblacion}")
             print(f"|Pais con menor poblacion: {nombre_menor} |Poblacion: {men_poblacion}")
-            
+
     except FileNotFoundError:
-        print(" El archivo no existe. Creando uno nuevo...")
         inicializar_archivo()
 
 def promedio_poblacion():
@@ -348,7 +356,11 @@ def promedio_poblacion():
                     continue
             
             #Promedio total
-            prom_poblacion = suma_poblacion / len(paises)
+            
+            try:
+                prom_poblacion = suma_poblacion / len(paises)
+            except ZeroDivisionError:
+                print("ERROR. Valor invalido para division..")
             
             print("\n" + "=" * 30)
             print(f"|El promedio de poblacion mundial es de: {prom_poblacion}")
