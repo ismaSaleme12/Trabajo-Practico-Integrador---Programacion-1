@@ -95,7 +95,26 @@ El sistema trabaja leyendo y escribiendo datos directamente en `paises.csv` util
 
 #### ✅ Opcion 4 – Ordenar paises
 
+<img width="843" height="261" alt="imagen" src="https://github.com/user-attachments/assets/0e60e66e-5631-4404-8cbd-002caf41d7d4" />
 
+- **Ordenamiento por nombre (alfabeticamente)**
+
+  <img width="829" height="432" alt="imagen" src="https://github.com/user-attachments/assets/53fd1615-13d8-43d2-a494-b9b185e89ad2" />
+
+- **Ordenamiento por poblacion (Ascendente o Descendente)**
+
+<img width="829" height="141" alt="imagen" src="https://github.com/user-attachments/assets/e4a16bce-6409-4782-955b-a56ba68c7e41" />
+
+- ***Ascendente***
+
+  <img width="821" height="411" alt="imagen" src="https://github.com/user-attachments/assets/15a5c8ba-7871-4def-9400-e70a193441a0" />
+
+- ***Descendente***
+
+  <img width="814" height="430" alt="imagen" src="https://github.com/user-attachments/assets/b909c0f4-bf95-4107-a26c-98a85be99e9c" />
+
+- **Ordenamiento por superficie (Ascendente o Descendente)**
+- ***Se comporta de igual manera que la opcion anterior***
 
 
 
