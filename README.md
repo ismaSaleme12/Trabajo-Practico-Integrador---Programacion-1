@@ -4,7 +4,7 @@
 - Ismael Saleme
 
 ## 💻 Descripcion del programa:
-### Este proyecto es una aplicación de consola en Python para gestionar un pequeño dataset de países almacenado en un archivo CSV (paises.csv). 
+### 🔴 Este proyecto es una aplicación de consola en Python para gestionar un pequeño dataset de países almacenado en un archivo CSV (paises.csv). 
 
 ### 🟢 El programa ofrece un menú interactivo con opciones para:
 
