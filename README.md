@@ -1,5 +1,8 @@
 # Trabajo Práctico Integrador – Programación 1
+
 ## Gestión de Países con archivos CSV
+
+### 📕 Integrantes: Sabrina gimenez e Ismael saleme
 
 ### 📌 Descripción del programa
 Este proyecto es una aplicación de consola escrita en Python que administra un registro de países almacenado en un archivo CSV.  
@@ -152,6 +155,12 @@ El sistema trabaja leyendo y escribiendo datos directamente en `paises.csv` util
 #### ✅ Opcion 8 – Salir del programa
 
 <img width="885" height="41" alt="imagen" src="https://github.com/user-attachments/assets/e67409f6-3ef0-4ea3-8c5e-f51d28b88d8e" />
+
+### 👥 Participación de los integrantes
+Trabajo realizado por:
+- **(Nombre del Sabrina gimenez)** – Desarrollo del menú principal, manejo de archivos y carga/ eliminación de países y documentacion
+- **(Nombre del Ismael saleme)** – Implementación de filtros, ordenamientos y estadísticas, Testeo, validaciones y documentación.
+
 
 
 
